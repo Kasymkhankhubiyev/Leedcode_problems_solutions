@@ -27,10 +27,12 @@ def minimumTotal(triangle):
                 # print(y1)
             x2.append(y1)
             # print(x2)
-        if minimumTotal(x1) > minimumTotal(x2):
-            return triangle[0][0] + minimumTotal(x2)
+        min1 = minimumTotal(x1)
+        min2 = minimumTotal(x2)
+        if min1 > min2:
+            return triangle[0][0] + min2
         else:
-            return triangle[0][0] + minimumTotal(x1)
+            return triangle[0][0] + min1
     else:
         if triangle[1][0] > triangle[1][1]:
             return triangle[0][0] + triangle[1][1]
