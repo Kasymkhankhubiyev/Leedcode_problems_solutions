@@ -3,12 +3,17 @@ from lengthOfLongestSubstring import *
 
 
 if __name__ == '__main__':
+   pass
+
+
+
+
+   """
+   # for longestSubstring
    string = "hkcpmprxxxqw"
    l = lengthOfLongestSubstring(string)
    print(l)
-
-
-
+   """
 
    """
    # for logest_common_prefix
