@@ -2,13 +2,22 @@ from longest_common_prefix import *
 from lengthOfLongestSubstring import *
 from Triangle_the_shortest_path import *
 from Valid_Parentheses import *
+from Longest_Palindromic_Substring import *
 
 
 if __name__ == '__main__':
-   lists = ['()', '[]', '{}', '(]', '(){}[]', '([])[[[[]]]]', '([{}])', '([)]']
-   for i in lists:
-      result = isValid2(i)
-      print(result)
+   lists = ['abcba', 'abc']
+
+   for item in lists:
+      print(longestPalindrome(item))
+
+
+
+
+   # lists = ['()', '[]', '{}', '(]', '(){}[]', '([])[[[[]]]]', '([{}])', '([)]']
+   # for i in lists:
+   #    result = isValid2(i)
+   #    print(result)
 
    # for i in lists:
    #    result = isValid1(i)
